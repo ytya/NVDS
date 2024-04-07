@@ -6,13 +6,13 @@ from collections import OrderedDict
 # from mmseg.ops import resize
 from torch.nn.functional import interpolate as resize
 # from builder import HEADS
-from decode_head import BaseDecodeHead, BaseDecodeHead_clips, BaseDecodeHead_clips_flow
+from .decode_head import BaseDecodeHead, BaseDecodeHead_clips, BaseDecodeHead_clips_flow
 # from mmseg.models.utils import *
 import attr
 from IPython import embed
-from stabilization_attention import BasicLayer3d3
+from .stabilization_attention import BasicLayer3d3
 import cv2
-from networks import *
+from .networks import *
 import warnings
 # from mmcv.utils import Registry, build_from_cfg
 from torch import nn

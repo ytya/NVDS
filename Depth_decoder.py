@@ -7,7 +7,7 @@ import torchvision
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.nn.init as init
-from networks import *
+from .networks import *
 
 class Decoder(nn.Module):
     def __init__(self, inchannels = [256, 512, 1024, 2048], midchannels = [256, 256, 256, 512], upfactors = [2,2,2,2], outchannels = 1):
